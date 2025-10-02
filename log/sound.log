@@ -1,0 +1,278 @@
+6.0s 1 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.0s 2 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.0s 3 0.00s - to python to disable frozen modules.
+6.0s 4 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+6.7s 5 0.00s - Debugger warning: It seems that frozen modules are being used, which may
+6.7s 6 0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off
+6.7s 7 0.00s - to python to disable frozen modules.
+6.7s 8 0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.
+11.2s 9 Collecting evaluate
+11.2s 10 Downloading evaluate-0.4.5-py3-none-any.whl.metadata (9.5 kB)
+11.2s 11 Requirement already satisfied: datasets>=2.0.0 in /usr/local/lib/python3.11/dist-packages (from evaluate) (3.6.0)
+11.2s 12 Requirement already satisfied: numpy>=1.17 in /usr/local/lib/python3.11/dist-packages (from evaluate) (1.26.4)
+11.2s 13 Requirement already satisfied: dill in /usr/local/lib/python3.11/dist-packages (from evaluate) (0.3.8)
+11.2s 14 Requirement already satisfied: pandas in /usr/local/lib/python3.11/dist-packages (from evaluate) (2.2.3)
+11.2s 15 Requirement already satisfied: requests>=2.19.0 in /usr/local/lib/python3.11/dist-packages (from evaluate) (2.32.4)
+11.2s 16 Requirement already satisfied: tqdm>=4.62.1 in /usr/local/lib/python3.11/dist-packages (from evaluate) (4.67.1)
+11.2s 17 Requirement already satisfied: xxhash in /usr/local/lib/python3.11/dist-packages (from evaluate) (3.5.0)
+11.2s 18 Requirement already satisfied: multiprocess in /usr/local/lib/python3.11/dist-packages (from evaluate) (0.70.16)
+11.2s 19 Requirement already satisfied: fsspec>=2021.05.0 in /usr/local/lib/python3.11/dist-packages (from fsspec[http]>=2021.05.0->evaluate) (2025.5.1)
+11.2s 20 Requirement already satisfied: huggingface-hub>=0.7.0 in /usr/local/lib/python3.11/dist-packages (from evaluate) (0.33.1)
+11.2s 21 Requirement already satisfied: packaging in /usr/local/lib/python3.11/dist-packages (from evaluate) (25.0)
+11.3s 22 Requirement already satisfied: filelock in /usr/local/lib/python3.11/dist-packages (from datasets>=2.0.0->evaluate) (3.18.0)
+11.3s 23 Requirement already satisfied: pyarrow>=15.0.0 in /usr/local/lib/python3.11/dist-packages (from datasets>=2.0.0->evaluate) (19.0.1)
+11.3s 24 Collecting fsspec>=2021.05.0 (from fsspec[http]>=2021.05.0->evaluate)
+11.3s 25 Downloading fsspec-2025.3.0-py3-none-any.whl.metadata (11 kB)
+11.4s 26 Requirement already satisfied: pyyaml>=5.1 in /usr/local/lib/python3.11/dist-packages (from datasets>=2.0.0->evaluate) (6.0.2)
+11.4s 27 Requirement already satisfied: aiohttp!=4.0.0a0,!=4.0.0a1 in /usr/local/lib/python3.11/dist-packages (from fsspec[http]>=2021.05.0->evaluate) (3.12.13)
+11.4s 28 Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.11/dist-packages (from huggingface-hub>=0.7.0->evaluate) (4.14.0)
+11.4s 29 Requirement already satisfied: hf-xet<2.0.0,>=1.1.2 in /usr/local/lib/python3.11/dist-packages (from huggingface-hub>=0.7.0->evaluate) (1.1.5)
+11.4s 30 Requirement already satisfied: mkl_fft in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (1.3.8)
+11.4s 31 Requirement already satisfied: mkl_random in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (1.2.4)
+11.4s 32 Requirement already satisfied: mkl_umath in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (0.1.1)
+11.4s 33 Requirement already satisfied: mkl in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (2025.2.0)
+11.4s 34 Requirement already satisfied: tbb4py in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (2022.2.0)
+11.4s 35 Requirement already satisfied: mkl-service in /usr/local/lib/python3.11/dist-packages (from numpy>=1.17->evaluate) (2.4.1)
+11.4s 36 Requirement already satisfied: charset_normalizer<4,>=2 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (3.4.2)
+11.4s 37 Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (3.10)
+11.4s 38 Requirement already satisfied: urllib3<3,>=1.21.1 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (2.5.0)
+11.4s 39 Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.11/dist-packages (from requests>=2.19.0->evaluate) (2025.6.15)
+11.4s 40 Requirement already satisfied: python-dateutil>=2.8.2 in /usr/local/lib/python3.11/dist-packages (from pandas->evaluate) (2.9.0.post0)
+11.4s 41 Requirement already satisfied: pytz>=2020.1 in /usr/local/lib/python3.11/dist-packages (from pandas->evaluate) (2025.2)
+11.4s 42 Requirement already satisfied: tzdata>=2022.7 in /usr/local/lib/python3.11/dist-packages (from pandas->evaluate) (2025.2)
+11.5s 43 Requirement already satisfied: aiohappyeyeballs>=2.5.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (2.6.1)
+11.5s 44 Requirement already satisfied: aiosignal>=1.1.2 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.3.2)
+11.5s 45 Requirement already satisfied: attrs>=17.3.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (25.3.0)
+11.5s 46 Requirement already satisfied: frozenlist>=1.1.1 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.7.0)
+11.5s 47 Requirement already satisfied: multidict<7.0,>=4.5 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (6.6.3)
+11.5s 48 Requirement already satisfied: propcache>=0.2.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (0.3.2)
+11.5s 49 Requirement already satisfied: yarl<2.0,>=1.17.0 in /usr/local/lib/python3.11/dist-packages (from aiohttp!=4.0.0a0,!=4.0.0a1->fsspec[http]>=2021.05.0->evaluate) (1.20.1)
+11.5s 50 Requirement already satisfied: six>=1.5 in /usr/local/lib/python3.11/dist-packages (from python-dateutil>=2.8.2->pandas->evaluate) (1.17.0)
+11.5s 51 Requirement already satisfied: intel-openmp<2026,>=2024 in /usr/local/lib/python3.11/dist-packages (from mkl->numpy>=1.17->evaluate) (2024.2.0)
+11.5s 52 Requirement already satisfied: tbb==2022.* in /usr/local/lib/python3.11/dist-packages (from mkl->numpy>=1.17->evaluate) (2022.2.0)
+11.5s 53 Requirement already satisfied: tcmlib==1.* in /usr/local/lib/python3.11/dist-packages (from tbb==2022.*->mkl->numpy>=1.17->evaluate) (1.4.0)
+11.5s 54 Requirement already satisfied: intel-cmplr-lib-rt in /usr/local/lib/python3.11/dist-packages (from mkl_umath->numpy>=1.17->evaluate) (2024.2.0)
+11.5s 55 Requirement already satisfied: intel-cmplr-lib-ur==2024.2.0 in /usr/local/lib/python3.11/dist-packages (from intel-openmp<2026,>=2024->mkl->numpy>=1.17->evaluate) (2024.2.0)
+11.5s 56 Downloading evaluate-0.4.5-py3-none-any.whl (84 kB)
+11.6s 57 [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/84.1 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m84.1/84.1 kB[0m [31m3.9 MB/s[0m eta [36m0:00:00[0m
+11.6s 58 [?25hDownloading fsspec-2025.3.0-py3-none-any.whl (193 kB)
+11.6s 59 [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/193.6 kB[0m [31m?[0m eta [36m-:--:--[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m193.6/193.6 kB[0m [31m9.5 MB/s[0m eta [36m0:00:00[0m
+13.2s 60 [?25hInstalling collected packages: fsspec, evaluate
+13.2s 61 Attempting uninstall: fsspec
+13.2s 62 Found existing installation: fsspec 2025.5.1
+13.2s 63 Uninstalling fsspec-2025.5.1:
+13.2s 64 Successfully uninstalled fsspec-2025.5.1
+13.5s 65 [31mERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+13.5s 66 bigframes 2.8.0 requires google-cloud-bigquery-storage<3.0.0,>=2.30.0, which is not installed.
+13.5s 67 cesium 0.12.4 requires numpy<3.0,>=2.0, but you have numpy 1.26.4 which is incompatible.
+13.5s 68 torch 2.6.0+cu124 requires nvidia-cublas-cu12==12.4.5.8; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cublas-cu12 12.5.3.2 which is incompatible.
+13.5s 69 torch 2.6.0+cu124 requires nvidia-cuda-cupti-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cuda-cupti-cu12 12.5.82 which is incompatible.
+13.5s 70 torch 2.6.0+cu124 requires nvidia-cuda-nvrtc-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cuda-nvrtc-cu12 12.5.82 which is incompatible.
+13.5s 71 torch 2.6.0+cu124 requires nvidia-cuda-runtime-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cuda-runtime-cu12 12.5.82 which is incompatible.
+13.5s 72 torch 2.6.0+cu124 requires nvidia-cudnn-cu12==9.1.0.70; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cudnn-cu12 9.3.0.75 which is incompatible.
+13.5s 73 torch 2.6.0+cu124 requires nvidia-cufft-cu12==11.2.1.3; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cufft-cu12 11.2.3.61 which is incompatible.
+13.5s 74 torch 2.6.0+cu124 requires nvidia-curand-cu12==10.3.5.147; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-curand-cu12 10.3.6.82 which is incompatible.
+13.5s 75 torch 2.6.0+cu124 requires nvidia-cusolver-cu12==11.6.1.9; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cusolver-cu12 11.6.3.83 which is incompatible.
+13.5s 76 torch 2.6.0+cu124 requires nvidia-cusparse-cu12==12.3.1.170; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-cusparse-cu12 12.5.1.3 which is incompatible.
+13.5s 77 torch 2.6.0+cu124 requires nvidia-nvjitlink-cu12==12.4.127; platform_system == "Linux" and platform_machine == "x86_64", but you have nvidia-nvjitlink-cu12 12.5.82 which is incompatible.
+13.5s 78 gcsfs 2025.3.2 requires fsspec==2025.3.2, but you have fsspec 2025.3.0 which is incompatible.
+13.5s 79 bigframes 2.8.0 requires google-cloud-bigquery[bqstorage,pandas]>=3.31.0, but you have google-cloud-bigquery 3.25.0 which is incompatible.
+13.5s 80 bigframes 2.8.0 requires rich<14,>=12.4.4, but you have rich 14.0.0 which is incompatible.[0m[31m
+13.5s 81 [0mSuccessfully installed evaluate-0.4.5 fsspec-2025.3.0
+14.9s 82 Collecting jiwer
+15.0s 83 Downloading jiwer-4.0.0-py3-none-any.whl.metadata (3.3 kB)
+15.0s 84 Requirement already satisfied: click>=8.1.8 in /usr/local/lib/python3.11/dist-packages (from jiwer) (8.2.1)
+16.2s 85 Collecting rapidfuzz>=3.9.7 (from jiwer)
+16.2s 86 Downloading rapidfuzz-3.14.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (12 kB)
+16.3s 87 Downloading jiwer-4.0.0-py3-none-any.whl (23 kB)
+16.3s 88 Downloading rapidfuzz-3.14.1-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (3.2 MB)
+16.3s 89 [?25l   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/3.2 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [91m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[91m╸[0m[90m━━━━━━━[0m [32m2.6/3.2 MB[0m [31m77.5 MB/s[0m eta [36m0:00:01[0m[2K   [90m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3.2/3.2 MB[0m [31m52.1 MB/s[0m eta [36m0:00:00[0m
+17.9s 90 [?25hInstalling collected packages: rapidfuzz, jiwer
+18.1s 91 Successfully installed jiwer-4.0.0 rapidfuzz-3.14.1
+35.4s 92 2025-09-16 11:00:15.075298: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+35.4s 93 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+35.4s 94 E0000 00:00:1758020415.250204      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+35.4s 95 E0000 00:00:1758020415.301278      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+35.6s 96 2025-09-16 11:00:15.075298: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+35.6s 97 WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+35.6s 98 E0000 00:00:1758020415.250204      19 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+35.6s 99 E0000 00:00:1758020415.301278      19 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+47.4s 100 Using device: cuda
+47.4s 101 混合精度训练: 启用(需要CUDA支持)
+47.4s 102 /tmp/ipykernel_19/3379687915.py:29: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+47.4s 103 scaler = torch.cuda.amp.GradScaler(enabled=device.type == "cuda")
+48.2s 104 Found 13388 WAV files
+48.2s 105 Training set: 10710 samples
+48.2s 106 Validation set: 2678 samples
+48.6s 107 /usr/local/lib/python3.11/dist-packages/transformers/configuration_utils.py:312: UserWarning: Passing `gradient_checkpointing` to a config initialization is deprecated and will be removed in v5 Transformers. Using `model.gradient_checkpointing_enable()` instead, or if you are using the `Trainer` API, pass `gradient_checkpointing=True` in your `TrainingArguments`.
+48.6s 108 warnings.warn(
+57.8s 109 /tmp/ipykernel_19/3379687915.py:261: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+57.8s 110 with torch.cuda.amp.autocast(enabled=device.type == "cuda"):
+3786.6s 111 /tmp/ipykernel_19/3379687915.py:222: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+3786.6s 112 with torch.cuda.amp.autocast(enabled=device.type == "cuda"):
+4046.7s 113 
+4046.7s 114 Epoch 1/8
+4046.7s 115 Train Loss: 0.8957
+4046.7s 116 Val Loss: 0.3803
+4046.7s 117 Val WER: 0.4495 (越低越好，0表示完全正确)
+4048.1s 118 保存最佳模型 (WER: 0.4495)
+7858.0s 119 
+7858.0s 120 Epoch 2/8
+7858.0s 121 Train Loss: 0.5627
+7858.0s 122 Val Loss: 0.2505
+7858.0s 123 Val WER: 0.3240 (越低越好，0表示完全正确)
+7861.0s 124 保存最佳模型 (WER: 0.3240)
+11662.6s 125 
+11662.6s 126 Epoch 3/8
+11662.6s 127 Train Loss: 0.3860
+11662.6s 128 Val Loss: 0.1455
+11662.6s 129 Val WER: 0.1890 (越低越好，0表示完全正确)
+11665.1s 130 保存最佳模型 (WER: 0.1890)
+15463.4s 131 
+15463.4s 132 Epoch 4/8
+15463.4s 133 Train Loss: 0.2765
+15463.4s 134 Val Loss: 0.0921
+15463.4s 135 Val WER: 0.1045 (越低越好，0表示完全正确)
+15466.0s 136 保存最佳模型 (WER: 0.1045)
+19269.9s 137 
+19269.9s 138 Epoch 5/8
+19269.9s 139 Train Loss: 0.2177
+19269.9s 140 Val Loss: 0.0665
+19269.9s 141 Val WER: 0.0735 (越低越好，0表示完全正确)
+19272.5s 142 保存最佳模型 (WER: 0.0735)
+23072.2s 143 
+23072.2s 144 Epoch 6/8
+23072.2s 145 Train Loss: 0.1708
+23072.2s 146 Val Loss: 0.0569
+23072.2s 147 Val WER: 0.0633 (越低越好，0表示完全正确)
+23074.8s 148 保存最佳模型 (WER: 0.0633)
+26881.5s 149 
+26881.5s 150 Epoch 7/8
+26881.5s 151 Train Loss: 0.1469
+26881.5s 152 Val Loss: 0.0537
+26881.5s 153 Val WER: 0.0588 (越低越好，0表示完全正确)
+26884.1s 154 保存最佳模型 (WER: 0.0588)
+30700.6s 155 
+30700.6s 156 Epoch 8/8
+30700.6s 157 Train Loss: 0.1346
+30700.6s 158 Val Loss: 0.0532
+30700.6s 159 Val WER: 0.0584 (越低越好，0表示完全正确)
+30704.0s 160 保存最佳模型 (WER: 0.0584)
+30704.0s 161 
+30704.0s 162 训练历史已保存到 /kaggle/working/training_history.xlsx
+30926.2s 163 
+30926.2s 164 最终模型在验证集上的表现:
+30926.2s 165 最终验证Loss: 0.0532
+30926.2s 166 最终验证WER: 0.0584 (错误率：5.84%)
+30926.2s 167 
+30926.2s 168 Sample 1:
+30926.2s 169 True: 冉 固镇 地毯 厂 会计 苗 文远 听到 喊声 跑 来 协助 将 罪犯 押 往 派出所
+30926.2s 170 Predicted: <unk> 固镇 地<unk> 厂 会计 苗 文远 听到 喊声 跑 来 协助 将 罪犯 押 往 派出所
+30926.2s 171 --------------------------------------------------
+30926.2s 172 
+30926.2s 173 Sample 2:
+30926.2s 174 True: 除 七 害 包括 扫除 卖淫嫖娼 聚众 赌博 吸食 贩运 毒品 拐卖 妇女儿童 等
+30926.2s 175 Predicted: 除 七 害 包括 扫除 卖淫嫖<unk> 聚众 赌博 吸食 贩运 毒品 拐卖 妇女儿童 等
+30926.2s 176 --------------------------------------------------
+30926.2s 177 /tmp/ipykernel_19/3379687915.py:360: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+30926.2s 178 with torch.cuda.amp.autocast(enabled=device.type == "cuda"):
+30926.4s 179 
+30926.4s 180 Sample 3:
+30926.4s 181 True: 杨 队长 家 的 二 娃子 发烧 到 区 上 诊所 看了 病 带回 一 包 针药 要 亦 琼 给 他 注射
+30926.4s 182 Predicted: 杨 队长 家 的 二 娃子 发烧 到 区 上 诊所 看了 病 但回 一 包 针药 要 亦 琼 给 他 注射
+30926.4s 183 --------------------------------------------------
+30926.4s 184 
+30926.4s 185 Sample 4:
+30926.4s 186 True: 西周 王 最后一个 王 是 周 幽 王 他 宠爱 妃子 褒 姒 废掉 申 后 引起 申 后 父亲 申 侯 的 不满
+30926.4s 187 Predicted: 西周 王 最后一个 王 是 周 幽 王 他 <unk>爱 妃子 褒 <unk> 废掉 申 后 引起 申 后 父亲 申 侯 的 不满
+30926.4s 188 --------------------------------------------------
+30926.4s 189 
+30926.4s 190 Sample 5:
+30926.4s 191 True: 该书 重点 介绍 了 企业 筹资 与 负债 经营 追 讨 债务 与 预防 债务 发生 的 相关知识
+30926.4s 192 Predicted: 该书 重点 介绍 了 企业 筹资 与 负债 经营 追 讨 债务 与 预防 债务 发生 的 相关知识
+30926.4s 193 --------------------------------------------------
+30926.7s 194 
+30926.7s 195 Sample 6:
+30926.7s 196 True: 我们 因为 信佛 而 念佛 因为 念佛 而 定力 得到 智慧 因此 我们 念佛 的 习惯 是 好习惯
+30926.7s 197 Predicted: 我们 因为 信佛 而 念佛 因为 念佛 而 定力 得到 智慧 因此 我们 念佛 的 习惯 是 好习惯
+30926.7s 198 --------------------------------------------------
+30926.7s 199 
+30926.7s 200 Sample 7:
+30926.7s 201 True: 她 到 过 许多 军营 哨所 慰问 子弟兵 到 医院 探望 护理 伤残 军人 约 二千 七百多 人次
+30926.7s 202 Predicted: 她 到 过 许多 军营 哨所 慰问 子弟兵 到 医院 探望 护理 伤残 军人 约 二千 七百多 人次
+30926.7s 203 --------------------------------------------------
+30926.7s 204 
+30926.7s 205 Sample 8:
+30926.7s 206 True: 英国 科学家 最近 发现 患 疯牛病 的 牛 的 后代 也 很 可能 患 疯牛病 英国 患 疯牛病 的 牛比 原先 认为 的 要 多
+30926.7s 207 Predicted: 英国 科学家 最近 发现 患 疯牛病 的 牛 的 后代 也 很 可能 患 疯牛病 英国 患 疯牛病 的 牛比 原先 认为 的 要 多
+30926.7s 208 --------------------------------------------------
+30926.8s 209 
+30926.8s 210 Sample 9:
+30926.8s 211 True: 女 队员 有 莫慧兰 吉利 雅 奎 媛媛 刘 旋 毛 燕玲 乔 娅 毕 文静 和 叶 琳琳
+30926.8s 212 Predicted: 女 队员 有 莫慧兰 吉利 雅 <unk> 媛媛 刘 旋 毛 燕玲 乔 <unk> 毕 文静 和 叶 琳琳
+30926.8s 213 --------------------------------------------------
+30926.8s 214 
+30926.8s 215 Sample 10:
+30926.8s 216 True: 利用 滚 装船 可以 用 卡车 或 牵引 车把 货物 从 工厂 直接 送到 收货 地点 实现 门 到 门 运输
+30926.8s 217 Predicted: 利用 滚 装船 可以 用 卡车 或 牵引 车把 货物 从 工厂 直接 送到 收货 地点 实现 门 到 门 运输
+30926.8s 218 --------------------------------------------------
+30926.8s 219 
+30926.8s 220 测试结果已保存到 /kaggle/working/test_results.xlsx
+30926.8s 221 
+30926.8s 222 Sample 1: C18_732.wav
+30926.8s 223 True text: 冉 固镇 地毯 厂 会计 苗 文远 听到 喊声 跑 来 协助 将 罪犯 押 往 派出所
+30926.8s 224 Predicted text: <unk> 固镇 地<unk> 厂 会计 苗 文远 听到 喊声 跑 来 协助 将 罪犯 押 往 派出所
+30926.9s 225 ================================================================================
+30926.9s 226 
+30926.9s 227 Sample 2: A8_157.wav
+30926.9s 228 True text: 除 七 害 包括 扫除 卖淫嫖娼 聚众 赌博 吸食 贩运 毒品 拐卖 妇女儿童 等
+30926.9s 229 Predicted text: 除 七 害 包括 扫除 卖淫嫖<unk> 聚众 赌博 吸食 贩运 毒品 拐卖 妇女儿童 等
+30926.9s 230 ================================================================================
+30926.9s 231 
+30926.9s 232 Sample 3: B33_491.wav
+30926.9s 233 True text: 杨 队长 家 的 二 娃子 发烧 到 区 上 诊所 看了 病 带回 一 包 针药 要 亦 琼 给 他 注射
+30926.9s 234 Predicted text: 杨 队长 家 的 二 娃子 发烧 到 区 上 诊所 看了 病 但回 一 包 针药 要 亦 琼 给 他 注射
+30926.9s 235 ================================================================================
+30926.9s 236 
+30926.9s 237 Sample 4: D32_950.wav
+30926.9s 238 True text: 西周 王 最后一个 王 是 周 幽 王 他 宠爱 妃子 褒 姒 废掉 申 后 引起 申 后 父亲 申 侯 的 不满
+30926.9s 239 Predicted text: 西周 王 最后一个 王 是 周 幽 王 他 <unk>爱 妃子 褒 <unk> 废掉 申 后 引起 申 后 父亲 申 侯 的 不满
+30926.9s 240 ================================================================================
+30926.9s 241 
+30926.9s 242 Sample 5: A32_192.wav
+30926.9s 243 True text: 该书 重点 介绍 了 企业 筹资 与 负债 经营 追 讨 债务 与 预防 债务 发生 的 相关知识
+30926.9s 244 Predicted text: 该书 重点 介绍 了 企业 筹资 与 负债 经营 追 讨 债务 与 预防 债务 发生 的 相关知识
+30926.9s 245 ================================================================================
+30926.9s 246 
+30926.9s 247 Sample 6: B7_253.wav
+30926.9s 248 True text: 我们 因为 信佛 而 念佛 因为 念佛 而 定力 得到 智慧 因此 我们 念佛 的 习惯 是 好习惯
+30926.9s 249 Predicted text: 我们 因为 信佛 而 念佛 因为 念佛 而 定力 得到 智慧 因此 我们 念佛 的 习惯 是 好习惯
+30926.9s 250 ================================================================================
+30926.9s 251 
+30926.9s 252 Sample 7: C20_579.wav
+30926.9s 253 True text: 她 到 过 许多 军营 哨所 慰问 子弟兵 到 医院 探望 护理 伤残 军人 约 二千 七百多 人次
+30926.9s 254 Predicted text: 她 到 过 许多 军营 哨所 慰问 子弟兵 到 医院 探望 护理 伤残 军人 约 二千 七百多 人次
+30926.9s 255 ================================================================================
+30926.9s 256 
+30926.9s 257 Sample 8: C4_519.wav
+30926.9s 258 True text: 英国 科学家 最近 发现 患 疯牛病 的 牛 的 后代 也 很 可能 患 疯牛病 英国 患 疯牛病 的 牛比 原先 认为 的 要 多
+30926.9s 259 Predicted text: 英国 科学家 最近 发现 患 疯牛病 的 牛 的 后代 也 很 可能 患 疯牛病 英国 患 疯牛病 的 牛比 原先 认为 的 要 多
+30926.9s 260 ================================================================================
+30926.9s 261 
+30926.9s 262 Sample 9: D21_947.wav
+30926.9s 263 True text: 女 队员 有 莫慧兰 吉利 雅 奎 媛媛 刘 旋 毛 燕玲 乔 娅 毕 文静 和 叶 琳琳
+30926.9s 264 Predicted text: 女 队员 有 莫慧兰 吉利 雅 <unk> 媛媛 刘 旋 毛 燕玲 乔 <unk> 毕 文静 和 叶 琳琳
+30926.9s 265 ================================================================================
+30926.9s 266 
+30926.9s 267 Sample 10: D12_946.wav
+30926.9s 268 True text: 利用 滚 装船 可以 用 卡车 或 牵引 车把 货物 从 工厂 直接 送到 收货 地点 实现 门 到 门 运输
+30926.9s 269 Predicted text: 利用 滚 装船 可以 用 卡车 或 牵引 车把 货物 从 工厂 直接 送到 收货 地点 实现 门 到 门 运输
+30926.9s 270 ================================================================================
+30932.0s 271 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+30932.0s 272 warn(
+30932.1s 273 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+30932.6s 274 [NbConvertApp] Writing 4375070 bytes to __notebook__.ipynb
+30933.9s 275 /usr/local/lib/python3.11/dist-packages/traitlets/traitlets.py:2915: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+30933.9s 276 warn(
+30933.9s 277 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+30934.8s 278 [NbConvertApp] Writing 4635733 bytes to __results__.html
