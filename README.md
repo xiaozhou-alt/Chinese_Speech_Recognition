@@ -2,7 +2,9 @@
 
 <img src="./output/pic/cover.jpg" width="300" style="float: left; margin-right: 15px;" />
 
-[![DOI](https://img.shields.io/badge/DataSet-THCHS 30-blue.svg)](https://opendatalab.org.cn/OpenDataLab/THCHS-30)[![Model](https://img.shields.io/badge/Model-Wav2Vec2-green.svg)](https://huggingface.co/docs/transformers/main/en/model_doc/wav2vec2)[![DOI](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/)
+[![DOI](https://img.shields.io/badge/DataSet-THCHS30-blue.svg)](https://opendatalab.org.cn/OpenDataLab/THCHS-30)
+[![Model](https://img.shields.io/badge/Model-Wav2Vec2-green.svg)](https://huggingface.co/docs/transformers/main/en/model_doc/wav2vec2)
+[![DOI](https://img.shields.io/badge/License-MIT-yellow.svg)](https://www.mit.edu/)
 
 ---
 
