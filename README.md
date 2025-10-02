@@ -217,4 +217,4 @@ WER 值越低，表示识别效果越好，0 表示完全正确。
 
 <video src="./output/pic/sound.mp4"></video>
 
-💡 GitHub可能无法正常显示缩略图，请查看demo.mp4
+💡 GitHub可能无法正常显示缩略图，请查看`./output/pic/sound.mp4`
